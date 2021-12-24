@@ -1,0 +1,66 @@
+.search {
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 540px) {
+        margin-bottom: 8rem;
+    }
+
+    &__container {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-family: "Mochiy Pop One";
+        line-height: 30 / 20 * 100%;
+        word-spacing: 0.3rem;
+
+        @media (min-width: 540px) {
+            word-spacing: 0.4rem;
+            font-size: 2.6rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 1.1rem 2rem;
+        background-color: rgba(#ffa577, 0.5);
+        border: 0.2rem solid #d55448;
+        border-radius: 5rem;
+        font-size: 1.7rem;
+
+        &::placeholder {
+            font-size: inherit;
+        }
+    }
+
+    &__output {
+        margin-top: 1rem;
+        background-color: #fff;
+        border-radius: 2rem;
+        border: 1px solid #000;
+        overflow: hidden;
+
+        @media (max-width: 1440px) {
+            
+        }
+    }
+
+    &__output-item {
+        padding: 1rem 2rem;
+        text-align: left;
+        border-bottom: 1px solid #000;
+
+        &:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

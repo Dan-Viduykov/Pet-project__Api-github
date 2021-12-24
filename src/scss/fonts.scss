@@ -1,0 +1,60 @@
+// ? <_ FONTS _> =============================================================================================
+//// todo <_ font icons _> =====================================================
+@font-face {
+    font-family: "icons";
+	font-display: swap;
+	src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+%ic {
+    font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+    &:before {
+        @extend %ic;
+		display: block;
+        font-size: 1.9rem;
+        color: #000000;
+	}
+}
+
+._icon-arrow:before {content: "\e900";}
+._icon-phone:before {content: "\e901";}
+._icon-search:before {content: "\e902";}
+._icon-subtract:before {content: "\e903";}
+._icon-tools:before {content: "\e904";}
+._icon-user:before {content: "\e905";}
+._icon-chat:before {content: "\e906";}
+
+  
+
+
+// todo <_ font import _> =====================================================
+//&display=swap&subset=cyrillic-ext
+@import url("https://fonts.googleapis.com/css?family=Zen+Kurenaido:regular");
+@import url("https://fonts.googleapis.com/css?family=Mochiy+Pop+One:regular");
+
+
+// todo <_ font settings _> =====================================================
+$font-family: "Zen Kurenaido"; // Семейство шрифта
+$font-color: #000000; // Цвет шрифта
+$font-size: 1.6rem; // Размер шрифта
+
+// ? <_ FONTS _> =============================================================================================
+
+
+
+// ? <_ FONTS LAYOUT _> =============================================================================================
+
+// ? <_ FONTS LAYOUT _> =============================================================================================

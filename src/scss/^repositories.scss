@@ -1,0 +1,167 @@
+.repositories {
+    &__container {
+    }
+
+    &__list {
+    }
+}
+
+.repository {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #c7a2c7;
+    border: 0.2rem solid darken(#c7a2c7, 20);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+    }
+
+
+
+    &__name {
+        margin-bottom: 1rem;
+    }
+
+    &__owner {
+        margin-bottom: 1rem;
+    }
+
+    &__stars {
+    }
+
+    &__actions {
+        padding-right: 2rem;
+    }
+
+    &__delete {
+        width: 26px;
+        height: 26px;
+        margin: 40px auto;
+        position: relative;
+        transform: rotate(45deg) scale(2);
+        background-color: transparent;
+
+        .top,
+        .bottom {
+            display: block;
+            background: #337AB7;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+            animation-iteration-count: 1;
+        }
+
+        .top {
+            height: 100%;
+            width: 2px;
+            margin-left: -1px;
+            transform: skewY(45deg);
+            top: 0;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 2px;
+            margin-top: -1px;
+            transform: skewX(-45deg);
+            left: 0;
+        }
+
+        @-webkit-keyframes top-out {
+            from {
+                top: 0%;
+                height: 100%;
+            }
+            to {
+                top: 200%;
+                height: 0%;
+            }
+        }
+         
+        @keyframes top-out {
+            from {
+                top: 0%;
+                height: 100%;
+            }
+            to {
+                top: 200%;
+                height: 0%;
+            }
+        }
+        @-webkit-keyframes top-in {
+            from {
+                top: -100%;
+                height: 0%;
+            }
+            to {
+                top: 0%;
+                height: 100%;
+            }
+        }
+        @keyframes top-in {
+            from {
+                top: -100%;
+                height: 0%;
+            }
+            to {
+                top: 0%;
+                height: 100%;
+            }
+        }
+        @-webkit-keyframes bot-out {
+            from {
+                left: 0%;
+                width: 100%;
+            }
+            to {
+                left: 200%;
+                width: 0%;
+            }
+        }
+        @keyframes bot-out {
+            from {
+                left: 0%;
+                width: 100%;
+            }
+            to {
+                left: 200%;
+                width: 0%;
+            }
+        }
+        @-webkit-keyframes bot-in {
+            from {
+                left: -100%;
+                width: 0%;
+            }
+            to {
+                left: 0%;
+                width: 100%;
+            }
+        }
+        @keyframes bot-in {
+            from {
+                left: -100%;
+                width: 0%;
+            }
+            to {
+                left: 0%;
+                width: 100%;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover .top {
+            animation: top-out 0.25s forwards, top-in 0.25s forwards 0.25s;
+        }
+
+        &:hover .bottom {
+            animation: bot-out 0.25s forwards 0.1s, bot-in 0.25s forwards 0.35s;
+        }
+    }
+}

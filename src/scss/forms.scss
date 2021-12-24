@@ -1,0 +1,82 @@
+// ?  <_ FORM () _>=============================================================================================
+.form {
+    &__column {
+    }
+    &__label {
+    }
+    &__input {
+    }
+    &__button {
+    }
+}
+// ?  <_ FORM _>=============================================================================================
+
+
+
+
+
+// ? <_ BUTTONS _>=============================================================================================
+.btn {
+	padding: 0.7rem 1.2rem;
+
+	display: flex;
+    align-items: center;
+    
+    background-color: $color-bc;
+    border-radius: 16px;
+    
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: .2s;
+    cursor: pointer;
+
+
+	@media (min-width: $md2+px) {
+		&:hover {
+            transform: scale(1.1);
+		}
+        &:active {
+            transform: scale(1.05);
+        }
+	}
+
+    &--view-circle {
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    
+    &--color-clear {
+        background-color: transparent;
+        border: 2px solid #000;
+    }
+}
+// ? <_ BUTTONS _>=============================================================================================
+
+
+
+
+
+// ? <_ INPUTS _> =============================================================================================
+.input {
+    padding: 1.2rem 1.6rem;
+
+    background: $color-bc;
+    border: 0.1rem solid #EAEAEA;
+    border-radius: 0.8rem;
+
+    &::placeholder {
+        font-size: 1.6rem;
+        line-height: 24 / 16 * 100%;
+        letter-spacing: -0.02rem;
+        color: #B5B6BC;
+    }
+}
+// ? <_ INPUTS _> =============================================================================================
